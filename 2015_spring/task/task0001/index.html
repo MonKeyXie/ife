@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../css/task0001.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body{margin:8px;padding:0}
+.main{width:800px;margin:0 auto}
+.le{background-color: #666666;float: left;height: 400px;width: 20%;}
+.ri{width:80%;height:400px;background-color:#CCCCCC;float:right}
+#img1{width:350px;height:200px}
+
+#div1{width:960px;background-color:red;margin:10px auto;text-align:center;}
+#div2{text-align:center;margin:0 auto 10px;}
+#div2n{width:960px;background-color:red;display:inline-block}
+
+#div4{margin-bottom:10px;}
+.div4-a{width:50px;height:50px;background-color:#FF0000;float:left}
+.div4-b{margin-left:40px;height:50px;background-color:blue;} /*没设置时DIV默认宽度自适应width:auto*/
+.div4-c{clear:left;width:100%;height:50px;background-color:yellow;}
+#div5{margin-bottom:10px}
+.div5-ab-wrap{display:flex} /*学display:flex的用法！*/
+.div5-a{width:50px;height:50px;background-color:red;}
+.div5-b{height:50px;background-color:blue;flex:1}
+.div5-c{width:100%;height:50px;background-color:yellow;}
+#div6{margin-bottom:10px;} /*div6为什么会被撑开？b和c的位置为什么不能倒置？*/
+.div6-a{width:50px;height:50px;float:left;background-color:#FF0000}
+.div6-b{width:50px;height:50px;float:right;background-color:yellow}
+.div6-c{height:50px;margin:0 50px;background-color:blue}
+#div7{margin-bottom:10px;overflow:hidden}/*重点掌握float和margin-left的用法*/
+.div7-a{width:100%;height:50px;float:left;background-color:blue}
+.div7-b{width:50px;height:50px;float:left;background-color:red;margin-left:-100%}
+.div7-c{width:50px;height:50px;float:left;background-color:yellow;margin-left:-50px}
+#div8{margin-bottom:10px;background-color:red;overflow:hidden}/*左浮动就行了，margin用了em这个单位*/
+.floatbox{width:100px;height:50px;margin:1em;float:left;background-color:blue}
+</style>
+<title>我的GitHub账号</title>
+</head>
+
+<body>
+	<h1>MonKeyXie<h1>
+    <ul>
+    	<li><a href="https://github.com/MonKeyXie">MyPage</a></li>
+        <li><a href="http://weibo.com/u/2101930933/home?topnav=1&wvr=6" target="_blank">Blog</a></li>
+    </ul>
+    <h2>如果没有坚持，一切都将毫无意义</h2>
+    <p>樱花下落的速度是每秒5cm,我该用什么速度生活才能再次与你相遇...</p>
+    <img id="img1" src="file:///D|/桌面/FileRecv/图片收集/秒5.png" alt="head picture"/>
+    <!--DIV居中两种方法-->
+    <div id="div1">div1</div>
+    <div id="div2">
+    	<div id="div2n">div2</div>
+    </div>
+    <!--两列布局两种方法-->
+    <div id="div4">
+    	<div class="div4-a"></div>
+        <div class="div4-b"></div>
+        <div class="div4-c"></div>
+    </div>
+    <div id="div5">
+    	<div class="div5-ab-wrap">
+        	<div class="div5-a"></div>
+        	<div class="div5-b"></div>
+        </div>
+        <div class="div5-c"></div>
+    </div>
+    <!--三列布局两种方法-->
+    <div id="div6">
+    <div class="div6-a"></div>
+    <div class="div6-b"></div>
+    <div class="div6-c"></div>
+    </div>
+    <div id="div7">
+    <div class="div7-a"></div>
+    <div class="div7-b"></div>
+    <div class="div7-c"></div>
+    </div>
+    <!--浮动布局-->
+    <div id="div8">
+    <div class="floatbox"></div>
+    <div class="floatbox"></div>
+    <div class="floatbox"></div>
+    <div class="floatbox"></div>
+    <div class="floatbox"></div>
+    <div class="floatbox"></div>
+    <div class="floatbox"></div>
+    <div class="floatbox"></div>
+    <div class="floatbox"></div>
+    <div class="floatbox"></div>
+    </div>
+	<!--居中两列布局-->
+    <div class="main">
+    <div class="le"></div>
+    <div class="ri"></div>
+    </div>
+    <!--小实验-->
+</body>
+</html>
